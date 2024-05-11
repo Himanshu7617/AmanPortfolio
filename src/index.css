@@ -41,8 +41,7 @@
 .navbar-container{
   height: 5rem;
   width: 100%;
- 
-  position: relative;
+  position: absolute;
   right: 0;
   top: 0;
   display: flex;
@@ -53,8 +52,13 @@
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 300;
-  color: var(--primary-black);
+  color: black;
   margin: 2rem;
+  transition: all 0.2 ease;
+}
+.navbar-links:hover{
+  color: var(--primary-red);
+  transform: scale(1.1);
 }
 @media only screen and (max-width:390px) {
   .navbar-links{
@@ -64,8 +68,8 @@
 
 /*----------------------hero section--------------------*/
 .hero-container{
-  height:30rem;
-  width: 100vw;
+  height: 40rem;
+  width: 100%;
   position: relative;
   display: flex;
   /* background-color: var(--primary-black); */
@@ -94,29 +98,33 @@
 }
 .hero-designer{
   color: black;
-  margin-top: -5rem;
+  margin-top: -4rem;
 }
-
+.homeScreen-background-video{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+  object-fit: cover;
+}
 @media only screen and (max-width: 1024px)  {
   
 }
 /*---------------------------project screen---------------*/
 .project-screenleft-container{
   height: 40rem;
-  width: 100vw;
+  width: 100%;
   /* background-color: var(--primary-black); */
   padding: 1rem;
-  padding-left: 3rem;
   display: flex;
   justify-content: left;
   align-items: center;
 }
 .project-screenright-container{
   height: 40rem;
-  width: 100vw;
+  width: 100%;
   /* background-color: var(--primary-black); */
   padding: 1rem;
-  padding-right: 3rem;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -158,7 +166,7 @@
 
 .footer-screen-container{
   height: 40rem;
-  width: 100vw;
+  width: 100%;
   background-color: black;
   display: flex;
 justify-content: center;
