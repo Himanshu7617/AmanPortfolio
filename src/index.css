@@ -36,6 +36,24 @@
   font-weight: bolder;
   color: white;
 }
+@media screen and (max-width:390px){
+  .heading-ele{
+    font-size: 3rem;
+  }
+  .subheading-ele{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .heading-ele{
+    font-size: 6rem;
+  }
+  .subheading-ele{
+    font-size: 4rem;
+  }
+  
+}
 /*--------------Navbar---------------*/
 
 .navbar-container{
@@ -160,6 +178,160 @@
   font-size: 6rem;
   color: var(--primary-red);
 }
+/* Styles for small devices (portrait) */
+@media only screen and (max-width: 576px) {
+  .project-screenleft-container{
+    height: 40rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-screenright-container{
+    height: 40rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-card-container{
+    height: 25rem;
+    width: 20rem;
+    margin: 0.5rem;
+   background-color: var(--primary-red);
+   border-radius: 1rem;
+  }
+  .project-detailleft-container{
+    height: 25rem;
+    width: 100%;
+   align-items: center;
+   margin: 0.5rem;
+  }
+  .project-detailright-container{
+    height: 25rem;
+    width: 100%;
+   align-items: center;
+   margin: 0.5rem;
+  }
+  .project-title{
+    font-size: 3rem;
+  }
+}
+
+/* Styles for small devices (landscape) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .project-screenleft-container{
+    height: 40rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-screenright-container{
+    height: 40rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-card-container{
+    height: 35rem;
+    width: 30rem;
+    margin: 1rem;
+   background-color: var(--primary-red);
+   border-radius: 1rem;
+  }
+  .project-detailleft-container{
+    height: 25rem;
+    width: 100%;
+   align-items: center;
+   margin: 1rem;
+  }
+  .project-detailright-container{
+    height: 25rem;
+    width: 100%;
+   align-items: center;
+   margin: 0.5rem;
+  }
+  .project-title{
+    font-size: 4rem;
+  }
+}
+
+/* Styles for medium devices (portrait) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+  .project-card-container{
+    height: 20rem;
+    width: 30rem;
+    margin: 1.5rem;
+   background-color: var(--primary-red);
+   border-radius: rem;
+  }
+  .project-detailleft-container{
+    height: 20rem;
+    width: 100%;
+   align-items: flex-start;
+   margin: 1.5rem;
+  }
+  .project-detailright-container{
+    height: 20rem;
+    width: 100%;
+   align-items: flex-end;
+   margin: 1rem;
+  }
+  .project-title{
+    font-size: 5rem;
+  }
+}
+
+/* Styles for medium devices (landscape) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .project-card-container{
+    height: 25rem;
+    width: 35rem;
+    margin: 1.5rem;
+   border-radius: 1rem;
+  }
+  .project-detailleft-container{
+    height: 25rem;
+    width: 100%;
+   align-items: flex-start;
+   margin: 1.5rem;
+  }
+  .project-detailright-container{
+    height: 25rem;
+    width: 100%;
+   align-items: flex-end;
+   margin: 1rem;
+  }
+  .project-title{
+    font-size: 6rem;
+  }
+}
+
+/* Styles for large devices (portrait) */
+@media only screen and (min-width: 1201px) {
+  .project-card-container{
+    height: 30rem;
+    width: 45rem;
+    margin: 2cqh;
+   border-radius: 1rem;
+  }
+  .project-detailleft-container{
+    height: 30rem;
+    width: 100%;
+   align-items: flex-start;
+   margin: 2rem;
+  }
+  .project-detailright-container{
+    height: 30rem;
+    width: 100%;
+   align-items: flex-end;
+   margin: 2rem;
+  }
+  .project-title{
+    font-size: 7rem;
+  }
+}
+
+
 
 
 /*------------------------footer-----------------------*/
@@ -197,4 +369,78 @@ justify-content: center;
   background-color: var(--primary-red);
   font-size: 2rem;
   color: white;
+}
+
+/* Styles for small devices (portrait) */
+@media only screen and (max-width: 576px) {
+  .footer-screen-container{
+    height: 40rem;
+    width: 100%;
+    background-color: black;
+    display: flex;
+  justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+  }
+  .footer-tagline{
+    margin:1rem;
+  }
+  .footer-create{
+    margin-top: -3rem;
+  }
+  .footer-line{
+    height: 0.1rem;
+    width: 80vw;
+    margin-left: 1rem;
+    background-color: white;
+    margin-top: -2rem;
+  }
+  .footer-contact-button{
+    height: 6rem;
+    width: 6rem;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+    background-color: var(--primary-red);
+    font-size: 0.5rem;
+    color: white;
+  }
+  .footer-lets{
+    font-size: 4.5rem;
+    margin-top: 4rem;
+    font-weight: lighter;
+  }
+  .footer-create{
+    font-size: 6rem;
+    font-weight: lighter;
+    margin-left: -0.1rem;
+  }
+  
+}
+
+/* Styles for small devices (landscape) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  /* Your CSS rules here */
+}
+
+/* Styles for medium devices (portrait) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  /* Your CSS rules here */
+}
+
+/* Styles for medium devices (landscape) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  /* Your CSS rules here */
+}
+
+/* Styles for large devices (portrait) */
+@media only screen and (min-width: 1201px) {
+  /* Your CSS rules here */
+}
+
+/* Styles for large devices (landscape) */
+@media only screen and (min-width: 1201px) {
+  /* Your CSS rules here */
 }
