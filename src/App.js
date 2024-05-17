@@ -6,18 +6,15 @@
  * create a separate form overlay kinda that appears when i click on contact 
  * 
  */
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 
-import HomeScreen from "./screens/homeScreen"
-import ProjectScreenL from "./screens/projectScreenL"
-import ProjectScreenR from "./screens/projectScreenR"
-import FooterScreen from "./screens/footerScreen"
+import Home from "./components/pages/HomePage"
 
 
 export default function App() {
-  return <>
-    <HomeScreen></HomeScreen>
-    <ProjectScreenL></ProjectScreenL>
-    <ProjectScreenR></ProjectScreenR>
-    <FooterScreen></FooterScreen>
-  </>
+  return <BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Home></Home>}></Route>
+  </Routes>
+  </BrowserRouter>
 }

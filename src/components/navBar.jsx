@@ -1,10 +1,12 @@
 
 //navBar.jsx
-
+import { Link } from "react-router-dom"
 
 export default function Navbar(){
     return <div className="navbar-container">
-        <a className="navbar-links navbar-link1" href="#home">Home</a>
-        <a className="navbar-links navbar-link2" href="#Contact">Contact</a>
+        
+        <Link className="navbar-links navbar-link1" to="/">Home</Link>
+        <Link className="navbar-links navbar-link2" to="/">Contact</Link>
+        
     </div>
 }
