@@ -453,7 +453,7 @@ justify-content: center;
  width: 100%;
   background-color: black;
   color:white;
-  position: relative;
+  /* position: relative; */
   padding:5rem;
   padding-left: 7rem;
 
@@ -524,6 +524,7 @@ textarea{
   border-radius: 50%;
   background-color: var(--secondary-red);
   position: fixed;
+  
   top: 3rem;
   right: 3rem;
   display: flex;
@@ -539,9 +540,28 @@ textarea{
 }
 .crossbar1{
   
-  transform: rotate(45deg);
+  transform: rotate(45deg) translateX(0.15rem);
 }
 .crossbar2{
-  transform: translate(1rem);
   transform: rotate(-45deg);
+}
+
+/*=========================panel===================*/
+.left-panel-background{
+  height: 100vh;
+  width: 49.5vw;
+  position: absolute;
+  left: 0;
+  z-index: 110;
+  background-color: black;
+
+}
+.right-panel-background{
+  height: 100vh;
+  width: 49.5vw;
+  position: absolute;
+
+  z-index: 110;
+  right: 0;
+  background-color: black;
 }
